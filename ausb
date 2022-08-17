@@ -1,0 +1,15 @@
+#!/bin/bash
+echo " "
+sudo fdisk -l | grep /dev/sd*
+echo "Сhoose the right USB device: "
+read sdname
+mkdir /home/kali/usb
+mount /dev/$sdname /home/kali/usb
+ls /home/kali
+echo "Сhoose the right folder to copy: "
+read folernn
+cp -r /home/kali/$folernn /home/kali/usb/$folernn
+echo "umount is..."
+umount /dev/$sdname /home/kali/usb
+echo " "
+echo "All operations is done!"
