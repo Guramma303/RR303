@@ -85,11 +85,14 @@ echo " "
 echo "****************** Setting up files 'auto-rush' and 'auto-silent' ******************"
 echo " "
 echo "Copy files 'auto-rush' and 'auto-silent' "
-cp auto-rush.sh /home/kali/auto-rush.sh
-cp auto-silent.sh /home/kali/auto-silent.sh
+cp arush /home/kali/arush
+cp asilent /home/kali/asilent
 echo "chmod 775 for 'auto-rush' and 'auto-silent'"
-chmod 775 /home/kali/auto-rush.sh
-chmod 775 /home/kali/auto-silent.sh
+chmod 775 /home/kali/arush
+chmod 775 /home/kali/asilent
+echo "fix for 'arush' and 'asilent'"
+sed -i -e 's/\r$//' /home/kali/arush
+sed -i -e 's/\r$//' /home/kali/asilent
 echo " "
 echo "done..."
 echo " "
