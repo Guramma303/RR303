@@ -87,12 +87,15 @@ echo " "
 echo "Copy files 'auto-rush' and 'auto-silent' "
 cp arush /home/kali/arush
 cp asilent /home/kali/asilent
+cp asilent /home/kali/ausb
 echo "chmod 775 for 'auto-rush' and 'auto-silent'"
 chmod 775 /home/kali/arush
 chmod 775 /home/kali/asilent
+chmod 775 /home/kali/ausb
 echo "fix for 'arush' and 'asilent'"
 sed -i -e 's/\r$//' /home/kali/arush
 sed -i -e 's/\r$//' /home/kali/asilent
+sed -i -e 's/\r$//' /home/kali/ausb
 echo " "
 echo "done..."
 echo " "
