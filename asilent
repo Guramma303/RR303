@@ -8,7 +8,7 @@ echo "HashCat Start!"
 sudo systemctl stop NetworkManager.service
 sudo systemctl stop wpa_supplicant.service
 echo "hcxdumptool run..."
-sudo hcxdumptool -i wlan1 -o dumpfile.pcapng --disable_client_attacks --disable_deauthentication --tot=timew --enable_status=15
+sudo hcxdumptool -i wlan1 -o dumpfile.pcapng --disable_client_attacks --disable_deauthentication --tot=timew --enable_status=3
 echo "hcxdumptool done..."
 echo " "
 sudo systemctl start wpa_supplicant.service
