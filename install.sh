@@ -87,7 +87,7 @@ echo " "
 echo "Copy files 'auto-rush' and 'auto-silent' "
 cp arush /home/kali/arush
 cp asilent /home/kali/asilent
-cp asilent /home/kali/ausb
+cp ausb /home/kali/ausb
 echo "chmod 775 for 'auto-rush' and 'auto-silent'"
 chmod 775 /home/kali/arush
 chmod 775 /home/kali/asilent
